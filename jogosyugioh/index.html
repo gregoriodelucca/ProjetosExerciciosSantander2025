@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yu-Gi-Oh! Card Game</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<h1>Duelo de Cartas: PvP</h1>
+  <p id="turnoInfo">Vez do Jogador 1</p>
+
+  <div class="game-board">
+    <!-- Carta do Jogador 1 -->
+    <div class="card" data-player="1" data-attack="2500" onclick="jogarCarta(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Yu-Gi-Oh%21_Card_Back.jpg" alt="Verso" />
+        </div>
+        <div class="card-back">
+          <img src="https://static.wikia.nocookie.net/yugioh/images/d/d0/BlueEyesWhiteDragon-LDDS-EN-UR-1E.png" alt="Blue Eyes" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Carta do Jogador 2 -->
+    <div class="card" data-player="2" data-attack="2000" onclick="jogarCarta(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Yu-Gi-Oh%21_Card_Back.jpg" alt="Verso" />
+        </div>
+        <div class="card-back">
+          <img src="https://static.wikia.nocookie.net/yugioh/images/2/2f/DarkMagician-LDDS-EN-UR-1E.png" alt="Dark Magician" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p id="resultado"></p>
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
